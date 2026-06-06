@@ -641,17 +641,61 @@
     }
 
     @media (max-width: 768px) {
-      .apps-grid     { grid-template-columns: 1fr; }
-      .support-grid  { grid-template-columns: 1fr; }
-      footer         { flex-direction: column; align-items: flex-start; }
-      .foot-links    { justify-content: flex-start; }
-      .foot-copy     { text-align: left; }
-      .about-main    { padding: 28px; }
+      /* Nav */
+      .nav-contact          { font-size: 12px; padding: 8px 12px; }
+
+      /* Hero */
+      .hero                 { padding: 100px 20px 60px; min-height: auto; }
+      .hero-badge           { font-size: 10px; padding: 5px 12px; margin-bottom: 20px; }
+      .hero-sub             { font-size: 15px; margin-top: 16px; }
+      .hero-actions         { margin-top: 32px; flex-direction: column; align-items: stretch; }
+      .btn-primary,
+      .btn-secondary        { justify-content: center; height: 48px; font-size: 14px; }
+      .wave-bars            { margin-top: 40px; gap: 3px; }
+      .wave-bars .bar       { width: 3px; }
+
+      /* Sections */
+      .apps-section         { padding: 60px 20px; }
+      .support-section      { padding: 60px 20px 80px; }
+      .about-section        { padding: 60px 20px 80px; }
+      .section-divider      { margin: 0 20px; }
+
+      /* Section headers */
+      .section-title        { font-size: 26px; }
+      .apps-section
+        .section-header     { margin-bottom: 36px; }
+
+      /* App cards */
+      .apps-grid            { grid-template-columns: 1fr; }
+      .app-card             { padding: 28px 24px; }
+      .app-card-header      { gap: 14px; margin-bottom: 16px; }
+      .app-icon             { width: 56px; height: 56px; border-radius: 14px; }
+      .app-title            { font-size: 18px; }
+      .app-subtitle         { font-size: 12px; }
+      .app-description      { font-size: 13px; }
+
+      /* Support */
+      .support-grid         { grid-template-columns: 1fr; max-width: 100% !important; }
+
+      /* About */
+      .about-main           { padding: 24px 20px; }
+      .about-text           { font-size: 14px; }
+      .stats-row            { grid-template-columns: repeat(2, 1fr); }
+      .stat-cell            { padding: 24px 20px; }
+      .stat-number          { font-size: 26px; }
+
+      /* Footer */
+      footer                { flex-direction: column; align-items: flex-start; gap: 12px; padding: 28px 20px; }
+      .foot-brand           { flex: none; }
+      .foot-links           { flex: none; justify-content: flex-start; }
+      .foot-copy            { flex: none; text-align: left; }
     }
 
-    @media (max-width: 600px) {
-      .hero-actions  { flex-direction: column; align-items: stretch; }
-      .btn-primary, .btn-secondary { justify-content: center; }
+    @media (max-width: 420px) {
+      .hero-headline        { letter-spacing: -0.03em; }
+      .nav-logo .logo-name  { font-size: 17px; }
+      .app-badge            { font-size: 9px; }
+      .stat-number          { font-size: 22px; }
     }
   </style>
 
@@ -676,7 +720,7 @@
       <img src="xplore_logo.png" alt="Xplore Labs">
       <span class="logo-name">Xplore<span> Labs</span></span>
     </a>
-    <a class="nav-contact" href="mailto:xplorelabs@icloud.com">Get in touch →</a>
+    <a class="nav-contact" href="mailto:xplorelabs@icloud.com">Get in touch</a>
   </nav>
 
   <!-- ── HERO ── -->
@@ -697,7 +741,7 @@
 
     <div class="hero-actions">
       <a class="btn-primary" href="#apps">View Apps</a>
-      <a class="btn-secondary" href="#contact">Contact →</a>
+      <a class="btn-secondary" href="#contact">Contact</a>
     </div>
 
     <div class="wave-bars">
@@ -767,7 +811,6 @@
         </div>
         <div class="app-card-footer">
           <a class="app-store-link" href="https://play.google.com/store/apps/details?id=sbs.xplore.teer_results&pcampaignid=web_share" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76a2 2 0 0 0 2.08-.22l12.49-7.22-3.15-3.15zm16.6-10.98-3.57-2.07-3.52 3.52 3.52 3.52 3.58-2.07a2 2 0 0 0 0-2.9zM3.5.24A2 2 0 0 0 2 2.1v19.8a2 2 0 0 0 1.5 1.86l11-11z"/></svg>
             View on Google Play
           </a>
         </div>
